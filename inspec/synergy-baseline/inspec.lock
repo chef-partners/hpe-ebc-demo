@@ -1,0 +1,8 @@
+---
+lockfile_version: 1
+depends:
+- name: oneview
+  resolved_source:
+    url: https://s3-us-west-2.amazonaws.com/temp-transfer-bucket/inspec-oneview-master.tar.gz
+    sha256: da245879e94b20fffaa5af943dddf350402224ac0c1f4b022796860aaed929b5
+  version_constraints: []
