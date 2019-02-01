@@ -7,7 +7,7 @@ DATASTORE=3PAR_SYN02
 LINUX_TEMPLATE=LinuxTemp
 LINUX_NODE=NationalParksWebServer
 SSH_USER=root
-SSH_PWD='password'
+SSH_PWD='notrealpassword'
 
 knife vsphere vm clone $LINUX_NODE --template $LINUX_TEMPLATE --cips dhcp --start --datastore $DATASTORE --bootstrap --ssh-user $SSH_USER --ssh-password $SSH_PWD --node-ssl-verify-mode none --run-list audit_wrapper,chef_client_wrapper,opsfirewall,hab_national_parks -N $LINUX_NODE
 
