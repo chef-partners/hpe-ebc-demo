@@ -5,11 +5,30 @@
 default['audit']['reporter'] = 'chef-server-automate'
 default['audit']['fetcher'] = 'chef-server'
 
-default['audit']['profiles'].push(
+case node['os']
+when 'linux'
+default['audit']['profiles'] = [
+  {
     'name': 'Check SSH version 2 is installed v0.1.0',
     'compliance': 'admin/ssh-check'
-)
+  }
+]
+when 'windows'
+default['audit']['profiles'] = [
+  {
+   'name': 'Check password history is set to 24 or more passwords v0.1.0',
+   'compliance': 'admin/pwd-check'
+  }
+]
+end
 
-default['audit']['inspec_version']='latest'
-
+case node['name']
+when 'Syn1'
+default['audit']['profiles'] = [
+  {
+    'name': 'Synergy Baseline Profile',
+    'compliance': 'admin/synergy-baseline'
+  }
+]
+end
 # For further information, see the Chef documentation (https://docs.chef.io/essentials_cookbook_attribute_files.html).

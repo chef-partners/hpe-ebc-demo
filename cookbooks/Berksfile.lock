@@ -1,0 +1,44 @@
+DEPENDENCIES
+  audit_wrapper
+    path: audit_wrapper
+  chef_client_wrapper
+    path: chef_client_wrapper
+  hab_national_parks
+    path: hab_national_parks
+  oneview_wrapper
+    path: oneview_wrapper
+  pwd_policy
+    path: pwd_policy
+  sshd
+
+GRAPH
+  audit (7.3.0)
+  audit_wrapper (0.1.10)
+    audit (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-client (11.0.5)
+    cron (>= 4.2.0)
+    logrotate (>= 1.9.0)
+  chef_client_wrapper (0.1.4)
+    chef-client (>= 0.0.0)
+  cron (6.2.1)
+  git (9.0.1)
+    build-essential (>= 5.0.0)
+  hab_national_parks (0.2.0)
+    habitat (>= 0.0.0)
+  habitat (0.73.1)
+    windows (>= 0.0.0)
+  logrotate (2.2.0)
+  mingw (2.1.0)
+    seven_zip (>= 0.0.0)
+  oneview_wrapper (0.2.4)
+    git (>= 0.0.0)
+  pwd_policy (0.1.2)
+    windows-security-policy (>= 0.0.0)
+  seven_zip (3.1.0)
+    windows (>= 0.0.0)
+  sshd (2.0.0)
+  windows (5.2.3)
+  windows-security-policy (0.3.9)

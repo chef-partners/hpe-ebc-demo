@@ -11,6 +11,10 @@ automate = data_bag_item('demo', 'automate_specs')
 # Download oneview SDK
 chef_gem 'oneview-sdk'
 
+git_client 'default' do
+  action :install
+end
+
 # Download and Install Oneview Plugin
 git '/root/inspec-hpe-oneview' do
   repository 'https://github.com/inspec/inspec-hpe-oneview.git'

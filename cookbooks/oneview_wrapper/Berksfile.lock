@@ -1,0 +1,7 @@
+DEPENDENCIES
+  oneview_wrapper
+    path: .
+    metadata: true
+
+GRAPH
+  oneview_wrapper (0.2.1)

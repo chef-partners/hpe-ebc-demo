@@ -1,0 +1,7 @@
+{
+    "id": "automate_specs",
+    "_default":{
+    	"automate_url": "http://ebcdemochefauto.hpelab/data-collector/v0/",
+	"automate_token": "441d76f9-8c62-4ba6-82db-3c5b8b321064"
+    }
+}	

@@ -4,6 +4,6 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  audit (7.0.1)
-  audit_wrapper (0.1.0)
+  audit (7.3.0)
+  audit_wrapper (0.1.4)
     audit (>= 0.0.0)

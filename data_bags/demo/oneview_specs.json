@@ -1,0 +1,8 @@
+{
+    "id": "oneview_specs",
+    "_default":{
+    	"url": "https://10.50.4.60",
+	"password": "password",
+	"user": "Admin" 
+    }
+}	

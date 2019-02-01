@@ -1,0 +1,9 @@
+DEPENDENCIES
+  pwd_policy
+    path: .
+    metadata: true
+
+GRAPH
+  pwd_policy (0.1.2)
+    windows-security-policy (>= 0.0.0)
+  windows-security-policy (0.3.9)

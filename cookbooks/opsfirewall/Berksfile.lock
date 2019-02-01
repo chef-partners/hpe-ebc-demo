@@ -1,0 +1,11 @@
+DEPENDENCIES
+  opsfirewall
+    path: .
+    metadata: true
+
+GRAPH
+  chef-sugar (5.0.0)
+  firewall (2.7.0)
+    chef-sugar (>= 0.0.0)
+  opsfirewall (0.1.2)
+    firewall (>= 0.0.0)

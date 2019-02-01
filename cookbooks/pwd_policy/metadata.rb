@@ -1,21 +1,21 @@
-name 'audit_wrapper'
+name 'pwd_policy'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures audit_wrapper'
-long_description 'Installs/Configures audit_wrapper'
-version '0.1.10'
+description 'Installs/Configures pwd_policy'
+long_description 'Installs/Configures pwd_policy'
+version '0.1.2'
 chef_version '>= 12.14' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/audit_wrapper/issues'
+# issues_url 'https://github.com/<insert_org_here>/pwd_policy/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/audit_wrapper'
-depends 'audit'
+# source_url 'https://github.com/<insert_org_here>/pwd_policy'
+depends 'windows-security-policy'
